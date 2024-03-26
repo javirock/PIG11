@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+
+
+.cabecera{
+    background-color: #622582;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+     background-color: #622582;
+  }
+  .dropdown-content a:hover {
+    background-color: #804F9A;
+   
+  }
+
+  button{
+    background-color: #622582;
+    font-family:"Montserrat", sans-serif;
+    font-size: 20px;
+    outline: none; 
+    color: white;
+    border: none;
+  }
+button:hover {
+    color:#EDD9DE
+}
+
+footer{
+  background-color: #6E748C;
+}
