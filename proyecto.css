@@ -9,8 +9,29 @@ body{
     background-color: #622582;
     color: white;
     text-decoration: none;
+    
 }
 
+.ig{
+  text-align: center;
+  padding: 10px ;
+}
+
+.gmail{
+  text-align: right;
+  padding: 5px ;
+}
+
+.inicio{
+  justify-content: center;
+  align-items: center;
+}
+
+.lupa{
+  height: 15px;
+  padding: 0;
+  margin: 0;
+}
 .dropdown {
     display: inline-block;
     position: relative;
@@ -49,7 +70,21 @@ body{
 button:hover {
     color:#EDD9DE
 }
+nav{
+  background-color: #622582;
+  text-align:center ;
+}
+
+.menu{
+  font-family:"Montserrat", sans-serif;
+  font-size: 20px;
+  outline: none; 
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
 
 footer{
   background-color: #6E748C;
+  
 }
