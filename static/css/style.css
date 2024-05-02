@@ -10,10 +10,77 @@ body {
   margin: 0;
 }
 
-.cabecera {
+.header-top{
   background-color: #622582;
-  color: white;
-  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.header-mid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 10px;
+  height: 150px;
+  w
+}
+
+.header-mid-1{
+  grid-area: 1 / 7 / 2 / 13;
+  text-align: center;
+}
+
+.header-mid-2{
+  grid-area: 1 / 1 / 3 / 7;
+  height: 150px;
+  text-align: center;
+}
+
+.header-mid-3{
+  grid-area: 2 / 7 / 3 / 13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-mid-1 form{
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.search-input{
+  height: 40px;
+  width: 50%;
+}
+
+.search-btn{
+  height: 40px;
+  position: absolute;
+}
+
+.search-btn img{
+  height: 100%;
+}
+
+.header-mid-2 img{
+  height: 100%;
+}
+
+.header-mid-3 ul{
+  position: absolute;
+}
+
+.header-mid-3 ul li{
+  list-style: none;
+}
+
+.header-mid-3 a {
+  color: black;
+}
+
+section div a {
+  color: #fff;
 }
 
 /*Estilos barra de navegación*/
@@ -69,6 +136,10 @@ nav {
   padding: 0;
 }
 
+.navbar :hover {
+  background-color: #804F9A;
+}
+
 .dropdown-products:hover .dropdown-products-content {
   display: block;
 }
@@ -89,12 +160,13 @@ nav {
 
 .register{
   display: flex;
-  height: 400px;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
 
 .register-container{
+  margin: 30px;
   border: 1px solid black;
   border-radius: 5px;
   overflow: hidden;
@@ -113,6 +185,17 @@ nav {
   padding: 10px;
 }
 
+.btn{
+  padding: 5px;
+
+}
+
 footer {
   background-color: #6E748C;
+  height: 30px;
+  text-align: end;
+}
+
+footer p {
+  padding: 5px;
 }
