@@ -22,7 +22,6 @@ body {
   grid-template-columns: repeat(12, 1fr);
   margin: 10px;
   height: 150px;
-  w
 }
 
 .header-mid-1{
@@ -158,6 +157,42 @@ nav {
 
 }
 
+/*sección all-products*/
+.all-products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 20px 0;
+}
+
+.product-container{
+  height: 350px;
+  width: 25%;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  margin: 20px;
+}
+
+.product-container a{
+  display: block;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-container img{
+  max-width: 100%;
+  display: block;
+}
+
+.product-container h3{
+  margin: 10px 0 5px;
+}
+
+/*Pagina de registro*/
 .register{
   display: flex;
   height: auto;
@@ -191,6 +226,9 @@ nav {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   background-color: #6E748C;
   height: 30px;
   text-align: end;
