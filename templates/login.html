@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <script src="https://kit.fontawesome.com/a022660ce8.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <!-- Boton de regreso -->
+        <div id="btn-back">
+            <a href="javascript:history.back()">
+                <i class="fa-solid fa-arrow-left" ></i>
+            </a>
+        </div>
+
+        <div id="logo">
+            <a href="/index.html">
+                <img src="/static/img/logo.png" alt="logo" id="logoimg">
+            </a>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="login-container">
+            <h2 class="login-title">Bienvenido de vuelta!</h2>
+            <form class="login-form" claction="">
+                <div class="inputs">
+                    <label for="nick">Nick</label>
+                    <input type="text" id="nick" name="nick">
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password">
+                    <a href="/" id="changepass">¿Olvidaste tu contraseña?</a>
+
+                </div>
+
+                <div class="btn-snd">
+                    <input class="btn" type="submit" value="Iniciar Sesión">
+                </div>
+
+                <p id="registrar">
+                    ¿No tienes cuenta? <a href="/templates/register.html">Registrate</a>
+                </p>
+
+    
+</body>
+</html>
