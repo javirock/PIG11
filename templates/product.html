@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="../static/css/style.css">
-    <title>Registro</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             </div>
             <div class="header-mid-3">
                 <ul>
-                    <li><a href="register.html">CREAR CUENTA</a></li>
+                    <li><a href="/templates/register.html">CREAR CUENTA</a></li>
                     <li><a href="login.html">INICIAR SESION</a></li>
                 </ul>
             </div>
@@ -44,9 +44,10 @@
 
         <nav>
             <ul class="navbar">
-                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li class="dropdown-products">
-                    <a href="../index.html">Productos <span class="down-arrow">▼</span></a>
+                    <a href="index.html">Productos <span class="down-arrow">▼</span></a>
+                    <!--Falta agregar los enlaces a la pagina de poducto en los li a -->
                     <ul class="dropdown-products-content">
                         <li><a href="#">Ver todos</a></li>
                         <li><a href="#">Riñoneras</a></li>
@@ -63,33 +64,28 @@
 
     </header>
 
-    <section class="register">
-        <div class="register-container">
-            <h2 class="register-title">Registrate</h2>
-            <form class="register-form" claction="">
-                <label for="nick">Apodo:</label><br>
-                <input type="text" id="nick" name="nick"><br><br>
-                <label for="fname">Nombre:</label><br>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Apellido:</label><br>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" title="email"><br><br>
-                <label for="email">Confirmar Email:</label><br>
-                <input type="email" id="email-confirm" name="email" title="email-confirm"><br><br>
-                <input type="checkbox" id="iread" name="conformity">
-                <label for="iread">He leido y acepto los terminos y condiciones</label><br>
-                <input type="checkbox" id="iwant" name="iwant">
-                <label for="iwant">Quiero recibir informción y ofertas a mi mail</label><br><br>
-                <input class="btn" type="submit" value="Enviar">
-            </form>
+    <section class="product">
+        <div class="single-product-container">
+            <div class="single-product">   
+            <a href="#">
+                <img src="/static/img/Riñonera_mas_targetero.jpg" alt="imagen riñonera mas targetero">
+            </a>
+            
+            </div>
+
+            <div class="product-details">
+                <h3>Riñonera doble cierre más targetero</h3>
+                <p>$20.000</p>
+                <p>Riñonera con doble bolsillo de guardado. Muy espaciosa, liviana e impermeable. Cinta con broche plástico regulable. Producto con impacto social y ambiental positivos! + Tarjetero de REGALO!</p>
+
+                <button type="button" onclick="alert('Todavia no se puede comprar. Página en construcción XD')">Comprar</button>
+
+            </div>
         </div>
     </section>
-
     <footer>
         <p>CAC Grupo 11 todos los derechos reservados XD</p>
     </footer>
-
 </body>
 
 </html>
