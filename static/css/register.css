@@ -54,13 +54,17 @@ header {
 }
 
 #logo{
-  justify-self: center;
+  margin-right: 20px;
+  margin-top: 20px;
+  justify-self: end;
   grid-row: 1 / 2;
+  grid-column: 3 / 4;
 }
 
 #logoimg{
+  filter: invert(1);
   width: 4vw;
-  height: 4vw;
+  height: 3vw;
   margin-top: 7px;
 }
 
@@ -83,6 +87,10 @@ select {
   margin-bottom: 20px;
   width: 90%;
   border-radius: 10px;
+}
+
+.inputs input, select{
+  margin-bottom: 0px;
 }
 
 
@@ -163,13 +171,17 @@ a {
 }
 
 
-.btn {
+#btn {
   background-color: #9c4cc7;
   padding: 5px;
   text-align: center;
   cursor: pointer;
 }
 
+#btn:hover{
+  background-color: #803fa3;
+  transition: 0.3s ease-in-out;
+}
 
 
 #inses {
@@ -178,17 +190,25 @@ a {
 }
 
 
-/* Footer */
-/* footer {
-    position:absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #6E748C;
-    height: 30px;
-    text-align: end;
-  }
-  
-  footer p {
-    padding: 5px;
-  } */
+/* Funcion iluminar label desde js */
+.iluminar{
+  color: #FFD700;
+  transition: color 0.6s ease;
+}
+
+/* Errores */
+.msjerror{
+  align-self: flex-start;
+  font-size: 1.3vw;
+  color: rgb(255, 72, 58);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#error-iread{
+  align-self: flex-start;
+  font-size: 1.3vw;
+  color: rgb(255, 72, 58);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
