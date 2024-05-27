@@ -193,6 +193,8 @@ nav {
 }
 
 /*Pagina de registro*/
+/*Nahue creo una nueva
+Esta hay que borrarla*/
 .register{
   display: flex;
   height: auto;
@@ -224,6 +226,11 @@ nav {
   padding: 5px;
 
 }
+
+/* Product styles */
+
+
+/* Footer styles */
 
 .footer {
   position: relative;
