@@ -54,16 +54,20 @@
   }
   
   #logo{
-    justify-self: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    justify-self: end;
     grid-row: 1 / 2;
+    grid-column: 3 / 4;
   }
   
   #logoimg{
+    filter: invert(1);
     width: 4vw;
-    height: 4vw;
+    height: 3vw;
     margin-top: 7px;
   }
-  
+
   i {
     color: white;
   }
@@ -134,6 +138,7 @@
   }
 
   
+/*  */
 #password{
     margin-bottom: 2px;
   }
@@ -160,6 +165,12 @@
   #registrar {
     color: white;
     text-align: center;
+  }
+  
+  /* Funcion iluminar label desde js */
+.iluminar{
+    color: #FFD700;
+    transition: color 0.6s ease;
   }
   
   
