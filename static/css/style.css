@@ -16,6 +16,10 @@ body {
   padding: 5px;
 }
 
+.header-top a{
+  color: white
+}
+
 .header-mid{
   display: grid;
   grid-template-rows: 1fr 1fr;
