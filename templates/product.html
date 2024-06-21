@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Riñonera Mai.Calvo</title>
+    <link rel="icon" href="../static/img/logo-invert-removebg.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="../static/css/product.css">
 </head>
 
 <body>
@@ -35,8 +37,8 @@
             </div>
             <div class="header-mid-3">
                 <ul>
-                    <li><a href="/templates/register.html">CREAR CUENTA</a></li>
-                    <li><a href="login.html">INICIAR SESION</a></li>
+                    <li><a href="./register.html">CREAR CUENTA</a></li>
+                    <li><a href="./login.html">INICIAR SESION</a></li>
                 </ul>
             </div>
 
@@ -44,9 +46,9 @@
 
         <nav>
             <ul class="navbar">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li class="dropdown-products">
-                    <a href="index.html">Productos <span class="down-arrow">▼</span></a>
+                    <a href="../index.html">Productos <span class="down-arrow">▼</span></a>
                     <!--Falta agregar los enlaces a la pagina de poducto en los li a -->
                     <ul class="dropdown-products-content">
                         <li><a href="#">Ver todos</a></li>
@@ -65,15 +67,10 @@
     </header>
 
     <section class="product">
-        <div class="single-product-container">
-            <div class="single-product">   
-            <a href="#">
-                <img src="/static/img/Riñonera_mas_targetero.jpg" alt="imagen riñonera mas targetero">
-            </a>
-            
-            </div>
 
-            <div class="product-details">
+        <img src="../static/img/Riñonera_mas_targetero.jpg" alt="imagen riñonera mas targetero">
+
+        <div class="product-details">
                 <h3>Riñonera doble cierre más targetero</h3>
                 <p>$20.000</p>
                 <p>Riñonera con doble bolsillo de guardado. Muy espaciosa, liviana e impermeable. Cinta con broche plástico regulable. Producto con impacto social y ambiental positivos! + Tarjetero de REGALO!</p>
@@ -83,8 +80,41 @@
             </div>
         </div>
     </section>
-    <footer>
-        <p>CAC Grupo 11 todos los derechos reservados XD</p>
+    
+    <footer class="footer">
+        <ul class="iconos">
+            <li class="icon-elem">
+                <a href="https://www.instagram.com/maicalvo_ecosocial/" class="icon" title="Instagram Mai.Calvo" >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://es-la.facebook.com/" class="icon" title="Facebook Mai.Calvo" >
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="mailto:maicalvoecosocial@gmail.com" class="icon" title="Escríbeme">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="menu-footer">
+            <li class="menu-elem">
+                <a href="../index.html" class="menu-icon">Inicio</a>
+            </li>
+            <li class="menu-elem">
+                <a href="./404.html" class="menu-icon">Quienes somos</a>
+            </li>
+            <li class="menu-elem">
+                <a href="./404.html" class="menu-icon">Contacto</a>
+            </li>
+            <li class="menu-elem">
+                <a href="https://www.instagram.com/maicalvo_ecosocial/" class="menu-icon">Redes</a>
+            </li>
+        </ul>
+        <p class="texto">2024 - Todos los derechos reservados.</p>
     </footer>
 </body>
 

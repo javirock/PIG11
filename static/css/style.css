@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -76,10 +77,17 @@ body {
 
 .header-mid-3 ul li{
   list-style: none;
+
 }
 
 .header-mid-3 a {
   color: black;
+}
+
+.header-mid-3 a:hover {
+  transition: 0.15s ease-in;
+  color: #7627a1;
+  background-color: #e0cfe1;  ;
 }
 
 section div a {
@@ -166,23 +174,25 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   height: auto;
   padding: 20px 0;
 }
 
 .product-container{
-  height: 450px;
-  width: 25%;
+  height: 40vw;
+  width: 25vw;
   border: 2px solid black;
   border-radius: 15px;
-  overflow: hidden;
+  overflow:hidden;
   text-align: center;
   margin: 20px;
 }
 
 .product-container a{
   display: block;
-  height: 350px;
+  height: 80%;
   width: 100%;
   overflow: hidden;
 }
@@ -190,45 +200,11 @@ nav {
 .product-container img{
   max-width: 100%;
   display: block;
+
 }
 
-.product-container h3{
+.product-container h3, p {
   margin: 10px 0 5px;
-}
-
-/*Pagina de registro*/
-/*Nahue creo una nueva
-Esta hay que borrarla*/
-.register{
-  display: flex;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.register-container{
-  margin: 30px;
-  border: 1px solid black;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.register-title{
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  background-color: #622582;
-  color: #fff;
-}
-
-.register-form{
-  padding: 10px;
-}
-
-.btn{
-  padding: 5px;
-
 }
 
 /* Product styles */

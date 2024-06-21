@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             Swal.fire({
                 title: "Perfecto!",
                 text: "Gracias por registrarte",
-                footer: '<a href="/templates/login.html">Iniciar sesión</a>',
+                footer: '<a href="./login.html">Iniciar sesión</a>',
                 icon: "success"
               });
         }
