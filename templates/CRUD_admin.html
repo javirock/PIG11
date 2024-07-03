@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <script src="https://kit.fontawesome.com/a022660ce8.js" crossorigin="anonymous"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <!-- Boton de regreso -->
+        <div id="btn-back">
+            <a href="javascript:history.back()">
+                <i class="fa-solid fa-arrow-left" ></i>
+            </a>
+        </div>
+
+        <div id="logo">
+            <a href="../index.html">
+                <img src="../static/img/logo.png" alt="logo" id="logoimg">
+            </a>
+        </div>
+    </header>
+
+    <section class="register">
+        <div class="register-container">
+            <h2 class="register-title">CRUD ADMIN</h2>
+            <form class="crud-form" action="#">
+                <div class="inputs">
+                    <label for="product">Producto</label>
+                    <input type="text" id="product" name="product">
+                    <p class="msjerror" id="error-nick"></p>  <!-- Los msjerror no son solo para marcar un error, tambien lo utliza como margen inferior-->
+
+                    <label for="description">Descripción</label>
+                    <input type="text" id="description" name="description">
+                    <p class="msjerror" id="error-description"></p>  <!-- Los msjerror no son solo para marcar un error, tambien lo utliza como margen inferior-->
+
+                    <label for="price">Precio</label>
+                    <input type="number" id="price" name="price">
+                    <p class="msjerror" id="error-price"></p>  <!-- Los msjerror no son solo para marcar un error, tambien lo utliza como margen inferior-->
+
+                    <label for="image">Imagen</label>
+                    <input type="text" id="image" name="image">
+                    <p class="msjerror" id="error-image"></p>  <!-- Los msjerror no son solo para marcar un error, tambien lo utliza como margen inferior-->
+
+                <div class="btn-snd">
+                    <input type="hidden"  name="id" id="id-product">
+                    <button class="btn-product" type="button" id="btn-save-product">Agregar</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <section id="list" class="container">
+        <h3 class="subtitle">Listado de productos</h3>
+        <table id="list-table-products" class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-table-products">
+                
+            </tbody>
+        </table>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/crud-products.js"></script>
+    <script src="../static/js/validation-register.js"></script>
+
+</body>
+
+</html>
