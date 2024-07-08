@@ -42,8 +42,8 @@ async function showProducts(){
                     <td>${product.price}</td>
                     <td>${product.image}</td>
                     <td>
-                        <button class="btn-cac" onclick='updateMovie(${product.id_product})'><i class="fa fa-pencil" ></button></i>
-                        <button class="btn-cac" onclick='deleteMovie(${product.id_product})'><i class="fa fa-trash" ></button></i>
+                        <button class="btn-mod" onclick='updateProduct(${product.id_product})'><i class="fa fa-pencil" ></button></i>
+                        <button class="btn-mod" onclick='deleteProduct(${product.id_product})'><i class="fa fa-trash" ></button></i>
                     </td>
                   </tr>`;
       tableProducts.insertAdjacentHTML("beforeend",tr);
@@ -87,15 +87,16 @@ async function saveProduct(){
     result = await fetchData(`${BASEURL}/api/products/`, 'POST', productData);
   }
   
-  const formProduct = document.querySelector('#crud-form');
-  formProduct.reset();
+  showProducts();
+
+  document.getElementById("crud-form").reset();
   Swal.fire({
     title: 'Exito!',
     text: result.message,
     icon: 'success',
     confirmButtonText: 'Cerrar'
   })
-  showProducts();
+  
 }
   
 /**
@@ -105,7 +106,7 @@ async function saveProduct(){
  */
 function deleteProduct(id){
     Swal.fire({
-        title: "Esta seguro de eliminar la pelicula?",
+        title: "Esta seguro de eliminar el producto?",
         showCancelButton: true,
         confirmButtonText: "Eliminar",
     }).then(async (result) => {
@@ -123,7 +124,7 @@ function deleteProduct(id){
  * para su edición
  * @param {number} id Id del producto que se quiere editar
  */
-async function updateMovie(id){
+async function updateProduct(id){
     //Buscamos en el servidor el producto de acuerdo al id
     let response = await fetchData(`${BASEURL}/api/products/${id}`, 'GET');
     const idProduct = document.querySelector('#id-product');
